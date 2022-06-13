@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+      }
+
+      html {scroll-behavior: smooth;}
+
+
+      .logo{
+              margin-top: 63px;
+              margin-left: 300px;
+              position: absolute;
+              width: 117px;
+              list-style: none;
+          }
+
+          .button{
+            width:70px;
+            position:fixed;
+            bottom:30px;
+            right:30px;}
+
+      .menu{
+                  margin-top: 78px;
+                  margin-left: 960px;
+                  position: absolute;
+                  list-style: none;
+              }
+
+      img{
+        width : 100%;
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      .menu ul li{
+        z-index: 10;
+        list-style: none;
+        margin-right: 66px;
+        display: inline;
+        color: #6C4AF4;
+        text-decoration: none;
+        }
+
+        video{
+          display: inline;
+        }
+.menu ul li a{
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+}
+.menu ul li a:before{
+  content: "";
+  height: 4px;
+  width: 0;
+  background-color: #6C4AF4;
+  border-radius: 10px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.menu ul li a:hover::before{
+  width: 100%;
+  background-color: #FEDF3E;
+  width: 100%;
+}
+
+.scroll-container{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+#icon{
+  position: absolute;
+  top: 6520px; right: 260px;
+  width: 420px;
+}
+#design{
+  position: relative;
+
+}
+.menu ul li a:link { color: #6C4AF4; text-decoration: none;}
+.menu ul li a:visited {text-decoration : none; color : #6C4AF4;}
+.menu ul li a:hover{text-decoration : none; color : #EE405B;}
+.menu ul li a:active{text-decoration : none;color : #FEDF3E;}
+
+
+
+    </style>
+
+    <title>
+
+    </title>
+  </head>
+  <body>
+
+    <header>
+
+      <div class="scroll-container">
+        <ul class="logo">
+          <li>
+            <a href="#Home">
+              <img src="img/Logo.png">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--logo-->
+
+      <div class="scroll-container">
+        <div class="menu">
+         <ul>
+           <li><a href="#About"><b>About</b></a></li>
+           <li><a href="#design"><b>Design</b></a></li>
+           <li><a href="#Service"><b>Service</b></a></li>
+         </ul>
+       </div>
+     </div>
+
+    </header>
+
+
+    <div id="Home">
+      <img src="img/Home.jpg">
+    </div>
+    <div id="About">
+      <img src="img/About.jpg">
+    </div>
+    <div id="design">
+      <img src="img/Design.jpg">
+    </div>
+    <div id="icon">
+      <img src="img/icon.gif" width="500px">
+    </div>
+
+    <div id="Service">
+      <img src="img/Service.jpg">
+    </div>
+
+    <video src="img/Clive_Video.mp4" width="100%"autoplay controls>
+        </video>
+
+    <div id="Footer">
+      <img src="img/Footer.jpg">
+    </div>
+
+
+    <div class="button";>
+      <a href = "#Home">
+        <img src="img/Button.png" title="위로가기">
+      </a>
+    </div>
+  </body>
+</html>
